@@ -16,7 +16,7 @@ foreach ($relative in $allowedRoots) {
       $entry = $file.FullName.Substring($projectRoot.Length + 1).Replace([System.IO.Path]::DirectorySeparatorChar, [char]'/')
       # Unpublished research and raw internal measurement output are not judge deliverables.
       if ($entry -match '^docs/(research|evidence)/') { continue }
-      if ($entry -match '(^|/)(node_modules|\.next|\.git|\.netlify|\.submission-build|\.local-demo|test-results|playwright-report|__pycache__)(/|$)' -or $file.Name -like '.env*' -or $file.Extension -in @('.zip', '.log', '.pyc', '.tsbuildinfo') -or $file.Name -match '(?i)(credential|secret|private[-_]?key)') { continue }
+      if ($entry -match '(^|/)(node_modules|\.next|\.git|\.netlify|\.submission-build|\.local-demo|test-results|playwright-report|__pycache__)(/|$)' -or $file.Name -like '.env*' -or $file.Extension -in @('.zip', '.log', '.pyc', '.tsbuildinfo', '.mp4', '.webm', '.mov', '.wav', '.mp3') -or $file.Name -match '(?i)(credential|secret|private[-_]?key)') { continue }
       $files.Add($file)
     }
   }

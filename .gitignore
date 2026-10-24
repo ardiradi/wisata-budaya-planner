@@ -15,6 +15,9 @@ Thumbs.db
 .submission-build/
 .local-demo/
 .netlify/
+submission/*.mp4
+submission/*.webm
+submission/*.zip
 
 # Local Netlify folder
 .netlify

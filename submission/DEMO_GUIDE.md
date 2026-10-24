@@ -20,6 +20,10 @@ Setelah build tersedia, `scripts/start-demo.ps1` membuka layanan loopback tanpa 
 
 Gunakan **satu tab utama** dan navigasi SPA ketika berpindah antara rencana dan Studio katalog. Rencana, revisi dan editorial hanya berada dalam memori tab. Refresh memulai sesi baru. Ini berlaku juga pada hosting publik dan bukan penyimpanan akun.
 
+## Video dan repository
+
+[Naskah produksi video Indonesia](VIDEO_SCRIPT_ID.md) · [Subtitle SRT](Wisata-Budaya-Planner-Demo-ID.srt) · [GitHub publik](https://github.com/ardiradi/wisata-budaya-planner). Master MP4 empat menit diserahkan terpisah; subtitle-only tanpa voiceover atau panggilan speech eksternal. Tidak ada redeployment.
+
 ## Alur utama
 
 | Bagian                 | Tindakan                                                                        | Hal yang dijelaskan                                                                                              |

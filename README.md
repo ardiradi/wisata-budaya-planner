@@ -8,6 +8,8 @@
 
 Prototipe untuk IT Festival 2026 — Vibe Coding Competition, dengan Palembang sebagai konteks kota pilot. Aplikasi menghubungkan preferensi perjalanan, pilihan budaya dan kuliner, waktu, kebutuhan makan, transportasi, serta anggaran rombongan dalam satu alur yang dapat ditinjau dan diedit.
 
+Materi video: [naskah dan alur demonstrasi Bahasa Indonesia](submission/VIDEO_SCRIPT_ID.md) · [subtitle Indonesia dalam format SRT](submission/Wisata-Budaya-Planner-Demo-ID.srt). MP4 demonstrasi diberikan terpisah dan tidak dimasukkan ke repository; video tidak memiliki audio/narasi suara, dengan subtitle Indonesia sebagai penyampaian penjelasan.
+
 > **Demo kompetisi — seluruh data runtime sintetis.** Situs publik memakai simulasi ranking dan fallback deterministik. Tempat, bukti, ulasan, harga, jam buka, layanan makan, dan rute contoh bukan informasi wisata Palembang yang telah diverifikasi secara independen. Jangan gunakan hasilnya sebagai panduan perjalanan nyata atau memasukkan data pribadi.
 
 ## Fitur yang dapat dicoba
@@ -43,12 +45,12 @@ npm run dev
 
 Buka [http://127.0.0.1:3000](http://127.0.0.1:3000). Runner hanya mengikat loopback dan mematikan telemetry framework. Jika port sudah terpakai, gunakan `npm run dev -- --port 3001`.
 
-| Halaman | Fungsi |
-| --- | --- |
-| `/` | Landing dan penelusuran konsep sintetis |
-| `/rencanakan` | Preferensi, ketersediaan harian, anchor, dan kebutuhan makan |
-| `/rencana` | Hasil, perubahan yang dipratinjau, dan riwayat sementara |
-| `/editorial` | Workflow bukti dan review yang seluruh aktornya disimulasikan |
+| Halaman       | Fungsi                                                        |
+| ------------- | ------------------------------------------------------------- |
+| `/`           | Landing dan penelusuran konsep sintetis                       |
+| `/rencanakan` | Preferensi, ketersediaan harian, anchor, dan kebutuhan makan  |
+| `/rencana`    | Hasil, perubahan yang dipratinjau, dan riwayat sementara      |
+| `/editorial`  | Workflow bukti dan review yang seluruh aktornya disimulasikan |
 
 Semua preferensi, hasil, riwayat, dan perubahan editorial berada di memori React. Reload atau hapus hasil mengakhiri sesi. Tidak ada penyimpanan traveler, login produksi, database, cookies, maupun local/session storage yang digunakan untuk menyimpan perjalanan.
 
@@ -68,13 +70,13 @@ Di Windows dengan Microsoft Edge terpasang, jalankan `$env:PLAYWRIGHT_CHANNEL = 
 
 **Hasil yang telah dijalankan dan dicatat pada checkpoint 24 Oktober 2026 WIB:**
 
-| Ruang lingkup | Bukti aktual yang dipertahankan |
-| --- | --- |
-| Unit, integrasi, komponen lokal | 571/571 test, 42 file, 140,26 detik |
-| Regresi Edge desktop/mobile lokal | 86/86 kasus; 42 scan axe, nol pelanggaran aturan yang dikonfigurasi |
-| Korpus adversarial sintetis | 120 keluaran serangan ditolak, mencakup 12 kategori; termasuk dalam hasil lokal di atas |
-| Browser anonim pada HTTPS publik | 16/16 kasus, 134,74 detik; 10 scan axe, nol pelanggaran aturan yang dikonfigurasi |
-| Gate publik | Gemini GET dan POST malformed tanpa kandidat ditolak 403 `LIVE_DISABLED`; jalur environment, receipt, dan riset privat tidak tersedia |
+| Ruang lingkup                     | Bukti aktual yang dipertahankan                                                                                                       |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Unit, integrasi, komponen lokal   | 571/571 test, 42 file, 140,26 detik                                                                                                   |
+| Regresi Edge desktop/mobile lokal | 86/86 kasus; 42 scan axe, nol pelanggaran aturan yang dikonfigurasi                                                                   |
+| Korpus adversarial sintetis       | 120 keluaran serangan ditolak, mencakup 12 kategori; termasuk dalam hasil lokal di atas                                               |
+| Browser anonim pada HTTPS publik  | 16/16 kasus, 134,74 detik; 10 scan axe, nol pelanggaran aturan yang dikonfigurasi                                                     |
+| Gate publik                       | Gemini GET dan POST malformed tanpa kandidat ditolak 403 `LIVE_DISABLED`; jalur environment, receipt, dan riset privat tidak tersedia |
 
 Angka tersebut adalah hasil checkpoint yang telah dilakukan, bukan klaim bahwa setiap clone baru otomatis lulus. Pemeriksaan teknik tidak membuktikan kenyamanan traveler nyata, aksesibilitas menyeluruh, fakta budaya, rute lapangan, atau kesiapan produksi. Lihat [checklist penyerahan](submission/SUBMISSION_CHECKLIST.md) dan [audit produk](docs/PRODUCT_AUDIT.md) untuk batas bukti dan risiko yang masih terbuka.
 

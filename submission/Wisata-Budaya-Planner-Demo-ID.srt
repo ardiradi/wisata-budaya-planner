@@ -1,0 +1,238 @@
+1
+00:00:00,000 --> 00:00:05,000
+Daftar tempat menarik belum menjadi
+sebuah perjalanan. Kita masih
+
+2
+00:00:05,000 --> 00:00:10,000
+perlu mencocokkan minat budaya,
+jam kunjungan, perjalanan, makan,
+
+3
+00:00:10,000 --> 00:00:15,000
+dan anggaran rombongan. Wisata Budaya
+Planner menyatukannya dalam rencana
+
+4
+00:00:15,000 --> 00:00:20,000
+yang dapat diperiksa. Palembang
+menjadi konteks pilot, dengan tujuan
+
+5
+00:00:20,000 --> 00:00:25,000
+membantu wisatawan memahami pilihan
+dan konsekuensi perjalanannya.
+
+6
+00:00:25,000 --> 00:00:30,000
+Ini adalah demo kompetisi dengan
+data sintetis. Nama tempat contoh,
+
+7
+00:00:30,000 --> 00:00:35,000
+jam, harga, rute, dan bukti
+merupakan fixture, bukan informasi
+
+8
+00:00:35,000 --> 00:00:40,000
+wisata nyata yang ditinjau
+independen. Nilai yang ingin
+
+9
+00:00:40,000 --> 00:00:45,000
+dibangun adalah transparansi:
+mengapa sebuah tempat dipilih,
+
+10
+00:00:45,000 --> 00:00:50,000
+bukti apa yang mendukungnya, dan
+apa yang masih belum diketahui.
+
+11
+00:00:50,000 --> 00:00:55,000
+Kita gunakan satu profil contoh:
+dua orang, satu hari, anggaran
+
+12
+00:00:55,000 --> 00:01:00,000
+Rp1.500.000, dengan minat sejarah.
+Empat langkah mengumpulkan tanggal,
+
+13
+00:01:00,000 --> 00:01:05,000
+waktu tersedia, minat wajib, kuliner,
+transportasi, dan batas berjalan.
+
+14
+00:01:05,000 --> 00:01:10,000
+Inventaris makan juga dikonfirmasi:
+sarapan dua porsi disediakan,
+
+15
+00:01:10,000 --> 00:01:15,000
+sementara makan siang dan malam
+tetap dibeli. Input terstruktur
+
+16
+00:01:15,000 --> 00:01:20,000
+menjaga kebutuhan penting tetap
+terlihat. Pengguna tidak perlu
+
+17
+00:01:20,000 --> 00:01:25,000
+memasukkan identitas, kontak,
+atau lokasi privat. Sistem tidak
+
+18
+00:01:25,000 --> 00:01:30,000
+boleh diam-diam melonggarkan
+syarat untuk menghasilkan rencana.
+
+19
+00:01:30,000 --> 00:01:35,000
+Profil awal menghasilkan
+rencana singkat dengan total
+
+20
+00:01:35,000 --> 00:01:40,000
+atas Rp280.500, termasuk
+cadangan. Kembali pukul 10:28,
+
+21
+00:01:40,000 --> 00:01:45,000
+sehingga sisa hari ditampilkan
+sebagai waktu belum
+
+22
+00:01:45,000 --> 00:01:50,000
+dialokasikan. Kunjungan kuliner tidak otomatis
+
+23
+00:01:50,000 --> 00:01:55,000
+menjadi jadwal makan.
+Sekarang, contoh terpisah:
+
+24
+00:01:55,000 --> 00:02:00,000
+traveler meminta makan siang
+antara 12:00 dan 13:00.
+
+25
+00:02:00,000 --> 00:02:05,000
+Layanan sintetis dua porsi
+ditempatkan pada 12:00–12:30.
+
+26
+00:02:05,000 --> 00:02:10,000
+Waktu menunggu terlihat,
+bukan diisi kegiatan karangan.
+
+27
+00:02:10,000 --> 00:02:15,000
+Makan malam tetap dianggarkan,
+tanpa mengarang lokasi
+
+28
+00:02:15,000 --> 00:02:20,000
+atau jamnya. Semua porsi yang
+diperlukan tetap dihitung.
+
+29
+00:02:20,000 --> 00:02:25,000
+Kembali ke profil singkat awal, kita
+mengganti Galeri dengan Paviliun.
+
+30
+00:02:25,000 --> 00:02:30,000
+Preview memperlihatkan dampak
+pada waktu, rute, berjalan,
+
+31
+00:02:30,000 --> 00:02:35,000
+dan biaya rombongan. Total berubah
+dari Rp280.500 menjadi Rp302.500.
+
+32
+00:02:35,000 --> 00:02:40,000
+Perubahan baru berlaku setelah
+komit eksplisit. Riwayat
+
+33
+00:02:40,000 --> 00:02:45,000
+mempertahankan versi sebelumnya,
+dan revert harus divalidasi kembali.
+
+34
+00:02:45,000 --> 00:02:50,000
+Stop terkunci tidak boleh diganti
+otomatis. Usulan yang melanggar
+
+35
+00:02:50,000 --> 00:02:55,000
+syarat keras diblokir tanpa
+diam-diam menimpa versi valid.
+
+36
+00:02:55,000 --> 00:03:00,000
+Traveler tetap memegang kendali
+atas perubahan rencananya.
+
+37
+00:03:00,000 --> 00:03:05,000
+AI dirancang untuk mengurutkan kandidat
+yang sudah lolos filter, memakai
+
+38
+00:03:05,000 --> 00:03:10,000
+identitas dan kode alasan yang dibatasi.
+Jadwal, rute, biaya, dan kelayakan
+
+39
+00:03:10,000 --> 00:03:15,000
+tetap ditentukan mesin deterministik.
+Demo publik memakai simulasi ranking dan
+
+40
+00:03:15,000 --> 00:03:20,000
+fallback. Adapter Gemini tersedia, tetapi
+belum ada respons live tervalidasi.
+
+41
+00:03:20,000 --> 00:03:25,000
+Output asing ditolak. Studio editorial
+menunjukkan bukti per bidang dan penarikan
+
+42
+00:03:25,000 --> 00:03:30,000
+kelayakan terkini. Aktor review adalah
+simulasi; ini bukan persetujuan manusia
+
+43
+00:03:30,000 --> 00:03:35,000
+independen. Fakta budaya tidak boleh
+muncul hanya karena model mengatakannya.
+
+44
+00:03:35,000 --> 00:03:40,000
+Pemeriksaan tercatat: 571 tes
+lokal, 86 kasus browser, dan 120
+
+45
+00:03:40,000 --> 00:03:45,000
+serangan sintetis ditolak.
+Verifikasi publik: 16 kasus lulus;
+
+46
+00:03:45,000 --> 00:03:50,000
+10 pemindaian aksesibilitas
+terkonfigurasi tanpa pelanggaran.
+
+47
+00:03:50,000 --> 00:03:55,000
+Ini bukti engineering, bukan
+kesiapan wisata nyata. M1 tetap OPEN.
+
+48
+00:03:55,000 --> 00:04:00,000
+Wisata Budaya Planner: perjalanan lebih
+personal, transparan, dan bermakna.
