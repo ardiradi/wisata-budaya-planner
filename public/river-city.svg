@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 680" fill="none">
+  <title>Ilustrasi konseptual kota dan sungai, bukan peta atau gambaran destinasi nyata</title>
+  <defs>
+    <linearGradient id="sky" x1="320" y1="0" x2="320" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#EEE5CD"/><stop offset="1" stop-color="#F6E6CF"/></linearGradient>
+    <linearGradient id="water" x1="320" y1="414" x2="320" y2="680" gradientUnits="userSpaceOnUse"><stop stop-color="#70988B"/><stop offset="1" stop-color="#335C51"/></linearGradient>
+    <pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="2" cy="3" r=".5" fill="#23483C" fill-opacity=".08"/></pattern>
+    <clipPath id="clip"><path d="M0 320C0 143.3 143.3 0 320 0s320 143.3 320 320v360H0V320Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <path fill="url(#sky)" d="M0 0h640v680H0z"/>
+    <circle cx="433" cy="198" r="75" fill="#D67C52"/>
+    <circle cx="433" cy="198" r="95" stroke="#D0B88C"/>
+    <path d="M0 327c90-45 155-29 218-14 136 33 277-25 422-45v200H0V327Z" fill="#BEC5A5"/>
+    <path d="M0 361c108-52 170-14 270-20 115-7 221-37 370-21v148H0V361Z" fill="#99AF91"/>
+    <path d="M0 435c89-45 202-29 320-18s230 27 320 5v258H0V435Z" fill="url(#water)"/>
+    <path d="M0 431c124-30 229-11 349-2 118 9 208 9 291-5" stroke="#F1E4C8" stroke-width="5"/>
+    <g fill="#7B8B6D"><path d="M14 362h95v60H14zM131 340h48v71h-48zM183 374h60v45h-60zM488 338h53v91h-53zM555 367h85v56h-85z"/></g>
+    <g fill="#D9BE8D"><path d="M17 352h101l-18 14H34l-17-14Z"/><path d="m124 337 31-26 31 26h-62Z"/><path d="M480 335h70l-35-29-35 29Z"/></g>
+    <path d="M0 405h640" stroke="#5B755D" stroke-width="10"/>
+    <path d="M0 397h640" stroke="#F4DEC1" stroke-width="5"/>
+    <g stroke="#B55E3F" stroke-width="9"><path d="M240 275v193M389 275v193"/></g>
+    <g stroke="#B55E3F" stroke-width="4"><path d="M0 395c89 0 150-24 240-120 55 97 91 97 149 0 90 96 161 120 251 120"/><path d="M63 390v15M115 371v34M167 339v66M212 298v107M272 320v85M313 349v56M354 320v85M417 299v106M462 341v64M513 374v31M572 392v13"/></g>
+    <g fill="#CA7650"><path d="M229 267h22v16h-22zM378 267h22v16h-22z"/></g>
+    <path d="M190 480c80-15 129-7 199 0M421 456h77M56 513h152M321 538h204M435 603h107M52 621h183M202 650h138" stroke="#D7DDC3" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+    <path d="m373 552 109-7-19 29h-68l-22-22Z" fill="#EACB93"/>
+    <path d="m385 548 78-5-8-17-48 3-22 19Z" fill="#B85C3B"/>
+    <path d="M425 524v-36" stroke="#E4CCA1" stroke-width="3"/><path d="m427 490 23 20-23 4v-24Z" fill="#EBCF9C"/>
+    <path d="M371 581h108M390 589h65" stroke="#A1B69E" stroke-linecap="round" stroke-width="2"/>
+    <path d="M0 603c66-37 97-14 148-33 28-10 72-6 91 21l-4 89H0v-77Z" fill="#274D3C"/>
+    <path d="M640 501c-40 6-54 27-63 59-37-14-70 20-75 59-52-2-55 34-54 61h192V501Z" fill="#294B39"/>
+    <g stroke="#193F32" stroke-width="8" stroke-linecap="round"><path d="M26 593V319M599 550V245"/></g>
+    <g fill="#365F42"><path d="M24 331C-12 274-29 283-56 268c26-15 67 11 80 63ZM29 330c27-57 60-67 85-60-47 11-46 46-85 60ZM29 323c-2-62-21-81-43-90 34-4 53 46 43 90ZM33 322c35-14 65-18 88 1-42-5-57 10-88-1ZM596 269c-50-46-96-34-114-13 45-17 66 16 114 13ZM601 266c15-69 50-78 73-69-43 12-38 51-73 69ZM600 263c-20-59-49-78-70-71 36 17 34 51 70 71ZM608 269c35-27 63-24 86-5-41-4-51 17-86 5Z"/></g>
+    <path fill="url(#grain)" d="M0 0h640v680H0z"/>
+    <g stroke="#F3E7CC" stroke-width="1" opacity=".6"><path d="m94 180 10-6 10 6M128 195l9-5 9 5M184 143l11-7 11 7"/></g>
+  </g>
+</svg>
